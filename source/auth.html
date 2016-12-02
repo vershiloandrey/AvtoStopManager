@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TRAVEL ONLINE authentication</title>
+	<link rel="stylesheet" href="css/style1.css" media="screen" type="text/css" />
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+</head>
+<body>
+ <script src="vk_auth.js"></script>
+<?php
+   if(isset($_GET['error'])){echo 'alert("hello!");';}
+?>
+    <div id="login">
+<div id="vk_auth"></div>
+                <div id="auth" style="display: none">
+        <form action="config.php" method="post">
+                <p><input name="first_name" id="first_name" type="hidden" placeholder="Имя" required></p> 
+                <p><input name="last_name" id="last_name" type="hidden" placeholder="Фамилия" required></p>
+                <p><input name="identificator" id="identificator" type="hidden" placeholder="identificator" required></p>
+                <p><span class="fontawesome-user"></span><input name="phone" id="phone" type="text" placeholder="Телефон" required></p>
+<p><input type="submit" value="ВОЙТИ"></p>
+
+      </form> 
+</div>
+    </div>
+            <script type="text/javascript">
+                VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
+ document.getElementById('vk_auth').style.display = 'none';
+ document.getElementById('auth').style.display = 'block';
+if(data['first_name']){
+   document.getElementById('first_name').value = data['first_name'];
+}
+if(data['last_name']){
+   document.getElementById('last_name').value = data['last_name'];
+}
+if(data['uid']){
+   document.getElementById('identificator').value = data['uid'];
+}
+if(data['mobile_phone']){
+   document.getElementById('phone').value = data['mobile_phone'];
+}
+
+} });
+            </script>
+    </div>
+</body>
+</html>

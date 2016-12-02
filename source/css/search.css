@@ -1,0 +1,100 @@
+li {
+         display: inline-block; /* Строчно-блочные элементы */
+         background: #00688B; /* Цвет фона */
+         margin-right: 10px; /* Расстояние между пунктами меню */
+         -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+         -moz-transform: skewX(-30deg); /* Для Firefox */
+         -o-transform: skewX(-30deg); /* Для Opera */
+         -ms-transform: skewX(-30deg); /* Для IE */
+         transform: skewX(-30deg); /* CSS3 */
+         transition: 1s linear; /* Время изменения */
+        }
+        a {
+         color: #fff; /* Цвет ссылок */
+         display: block; /* Блочный элемент */
+         padding: 10px 60px; /* Поля вокруг текста */
+         text-decoration: none; /* Убираем подчёркивание */
+         font-family: Arial Black;
+         -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+         -moz-transform: skewX(30deg); /* Для Firefox */
+         -o-transform: skewX(30deg); /* Для Opera */
+         -ms-transform: skewX(30deg); /* Для IE */
+         transform: skewX(30deg); /* CSS3 */
+         transition: 1s linear; /* Время изменения */
+        }
+        a:hover {
+         color: black; /* Цвет текста */
+        }
+        a1:link, a1:visited {
+    text-decoration: underline;
+    cursor: auto;
+}
+ 
+a1:hover, a1:active {
+    color: (зависит от браузера);
+} 
+        li:hover {
+         background: #FFD700; /* Цвет фона при наведении курсора мыши */
+        }
+    
+        .menu {
+         position: fixed; /* Фиксированное положение */
+         left: 3%; bottom: 3%; /* Левый нижний угол */
+        }
+   
+        #footer {
+         position: fixed; /* Фиксированное положение */
+         left: 0; bottom: 0; /* Левый нижний угол */
+         padding: 1px; /* Поля вокруг текста */
+         background: #363636; /* Цвет фона */
+         color: #B5B5B5; /* Цвет текста */
+         font-size: 10px;
+         padding-right: 50px;
+        }
+        .clear {
+         clear: left;
+        }
+    
+        html, body {
+             height: 100%; 
+             background: #c7b39b url(images/background.jpg); /* Цвет фона и путь к файлу */
+             color: #E0EEE0; /* Цвет текста */
+             margin: 0;
+            padding: 0;
+        }
+        #map { height: 90%;
+        float: right;
+        width: 79%;
+        height: 90%;
+        margin-right: 3%;
+        outline: 5px solid #00688B;
+        }
+        
+        #left-panel {
+            font-family: 'Roboto','sans-serif';
+            font-size: 12px;
+            line-height: 30px;
+            padding-left: 10px;
+          }
+        
+        .controls {
+        background-color: #fff;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 200;
+        height: 29px;
+        margin-left: 17px;
+        margin-top: 10px;
+        outline: none;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 15%;
+      }
+
+      .controls:focus {
+        border-color: #4d90fe;
+      }

@@ -1,0 +1,72 @@
+.sign figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+   }
+
+li {
+         display: inline-block; /* Строчно-блочные элементы */
+         background: #00688B; /* Цвет фона */
+         margin-right: 3px; /* Расстояние между пунктами меню */
+         -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+         -moz-transform: skewX(-30deg); /* Для Firefox */
+         -o-transform: skewX(-30deg); /* Для Opera */
+         -ms-transform: skewX(-30deg); /* Для IE */
+         transform: skewX(-30deg); /* CSS3 */
+         transition: 1s linear; /* Время изменения */
+        }
+        a.class1{
+         color: #fff; /* Цвет ссылок */
+         display: block; /* Блочный элемент */
+         padding: 10px 100px; /* Поля вокруг текста */
+         text-decoration: none; /* Убираем подчёркивание */
+         font-family: Arial Black;
+         -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+         -moz-transform: skewX(30deg); /* Для Firefox */
+         -o-transform: skewX(30deg); /* Для Opera */
+         -ms-transform: skewX(30deg); /* Для IE */
+         transform: skewX(30deg); /* CSS3 */
+         transition: 1s linear; /* Время изменения */
+        }
+        a.class1:hover {
+         color: black; /* Цвет текста */
+        }
+
+        li:hover {
+         background: #FFD700; /* Цвет фона при наведении курсора мыши */
+        }
+    
+        .fix {
+         position: fixed; /* Фиксированное положение */
+        }
+    
+        #container {
+         width: 100%; /* Общая ширина макета */
+         margin: 0 auto; /* Выравниваем по центру */
+        }
+        #leftcol {
+         float: left;
+         width: 83%;
+        }
+        #rightcol {
+         float: left;
+         width: 17%;
+        }
+        
+        #footer {
+         position: fixed; /* Фиксированное положение */
+         left: 0; bottom: 0; /* Левый нижний угол */
+         padding: 1px; /* Поля вокруг текста */
+         background: #363636; /* Цвет фона */
+         color: #B5B5B5; /* Цвет текста */
+         font-size: 10px;
+         padding-right: 50px;
+        }
+        
+        .clear {
+         clear: left;
+        }
+   
+        body {
+         background: #c7b39b url(images/background.jpg); /* Цвет фона и путь к файлу */
+         color: #E0EEE0; /* Цвет текста */
+        }
